@@ -81,7 +81,11 @@ You can now launch you browser and access 127.0.0.1:3000.
 
 You will be prompted to supply a blog title and email:
 
+<img width="382" alt="setup blog screenshot" src="https://cloud.githubusercontent.com/assets/1489337/12763124/9cbd3a5e-c9a7-11e5-97e3-e39e6098adf3.png">
+
 You will be signed in and issued a username and password:
+
+<img width="380" alt="setup example login info screenshot" src="https://cloud.githubusercontent.com/assets/1489337/12763208/0440d834-c9a8-11e5-9c81-05a4b60e9722.png">
 
 #### Seed your blog with posts & tags
 ```bash
@@ -90,28 +94,30 @@ $ rake db:seed
 ```
 
 #### Look around!
+* Visit your blog homepage at `localhost:3000/`
 * Go to the `/admin` backend and poke around (it's similar to wordpress).
 * Create your first blog post!
 
 ##The Bugs
-The following issues have been added to the main github repo. Please fix each bug on its own branch (e.g. `fix_sidebar_styles`). When you're finished, create a pull request from your fork back to the main repo.
+The following issues have been added to the main github repo. Please fix each bug on its own branch (e.g. `fix_sidebar_styles`).
 
-> Make sure to reference the issue you are resolving!
-
-####Issue \#1: Inconsistent Sidebar Styles
+####[Issue \#1](/issues/1): Inconsistent Sidebar Styles
 * All titles in the sidebar should have `monospace` style font
 * All bullets should be circles.
 
-<img width="221" alt="sidebar styles" src="https://cloud.githubusercontent.com/assets/1489337/12761855/80fe8e7c-c9a1-11e5-9070-6113b8e9b419.png">
-
-####Issue \#2: Top Month Always Empty (Archive Sidebar)
+####[Issue \#2](/issues/2): Top Month Always Empty (Archive Sidebar)
 * When I click on the top-most month in the Archive Sidebar it says "No posts found...".
 * When I create a post in the _current month_ (e.g. February) it displays a link in the sidebar for _next month_ (e.g. March), and says "No posts found..."
 
-####Issue \#3: Months sorted incorrectly (Archive Sidebar)
+####[Issue \#3](/issues/3): Months sorted incorrectly (Archive Sidebar)
 The sort order of months in the Archive Sidebar is off, with January 2015 appearing directly above December 2015:
 
-<img width="249" alt="archive sidebar sort order" src="https://cloud.githubusercontent.com/assets/1489337/12761829/698e56fa-c9a1-11e5-8d90-04ed28aa7a09.png">
+### Resolving the Issue
+Please fix each bug on its own branch (e.g. `fix_sidebar_styles`). When you're finished with a bug, create a pull request from your fork back to the main repo.
+
+<img width="1239" alt="example pull request" src="https://cloud.githubusercontent.com/assets/1489337/12763002/f2f3a6b6-c9a6-11e5-9e62-cff790c1a89a.png">
+
+> Make sure to reference the issue you are resolving!
 
 ## Helpful Hints
 * Use **Rubber Duck Debugging** -- Make sure you understand the issue!
